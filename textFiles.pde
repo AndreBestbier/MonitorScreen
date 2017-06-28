@@ -1,26 +1,27 @@
-String FolderName;
+  String FolderName;
 String date;
 
 
 void createTextFiles()
 {
   //Create text files for storing data
-  ppgText = createWriter(FolderName + "/ppgText.txt");
+  
+  ppgText = createWriter("C:/Users/abest/Dropbox/Ingenieurswese/Nagraads/Tesis/Results/DataAnalysis/Originals/" + FolderName + "/ppgText.txt");
   ppgText.println("Data recorded on " + date);
   ppgText.println("Time: " + hour() + ":" +  minute () + ":" +  second());
   ppgText.println("Time\t\tMillis\t\tIR PPG\t\tRed PPG\t\tFiltered\t\tSSF");
 
-  beatText = createWriter(FolderName + "/beatText.txt");
+  beatText = createWriter("C:/Users/abest/Dropbox/Ingenieurswese/Nagraads/Tesis/Results/DataAnalysis/Originals/" + FolderName + "/beatText.txt");
   beatText.println("Data recorded on " + date);
   beatText.println("Time: " + hour() + ":" +  minute () + ":" +  second());
   beatText.println("Time\t\tMillis\t\tbpm\t\tPeriod\t\tSpO2");
 
-  tempText = createWriter(FolderName + "/tempText.txt");
+  tempText = createWriter("C:/Users/abest/Dropbox/Ingenieurswese/Nagraads/Tesis/Results/DataAnalysis/Originals/" + FolderName + "/tempText.txt");
   tempText.println("Data recorded on " + date);
   tempText.println("Time: " + hour() + ":" + minute () + ":" +  second());
   tempText.println("Time\t\tMillis\t\tobjTemp\t\tdieTemp\t\tsensorVoltage");
 
-  respText = createWriter(FolderName + "/respText.txt");
+  respText = createWriter("C:/Users/abest/Dropbox/Ingenieurswese/Nagraads/Tesis/Results/DataAnalysis/Originals/" + FolderName + "/respText.txt");
   respText.println("Data recorded on " + date);
   respText.println("Time: " + hour() + ":" + minute () + ":" +  second());
   respText.println("Breathing cycle millis");

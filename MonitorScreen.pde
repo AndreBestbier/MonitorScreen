@@ -13,11 +13,11 @@ import processing.sound.SoundFile;  //Sound beeps
 
 //Serial communication variables
 Serial myPort;
-int baud = 57600; //57600 for USB, 9600 for BT
-String portName = "COM6";    //COM6 for USB, COM8 for BT, COM5 for UNO
-String inString;             //Input string from serial port
-boolean serialOpen = false;  //True is the serial port is successfully opened
-boolean runWhithoutSerial = false;
+int baud = 57600;                     //57600 for USB, 9600 for BT
+String portName = "COM6";             //COM6 for USB, COM8 for BT, COM5 for UNO
+String inString;                      //Input string from serial port
+boolean serialOpen = false;           //True is the serial port is successfully opened
+boolean runWhithoutSerial = false;    //True if user select to continue without connected device
 
 //File writer
 PrintWriter ppgText;
