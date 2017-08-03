@@ -38,14 +38,14 @@ void writeToFiles()
     writePPG = false;
   }
 
-  if (writeBeat && recording_A || writePPG && recording_B)
+  if (writeBeat && recording_A || writeBeat && recording_B)
   {
     beatText.print(minute() + "," + second() + "\t,\t" + millisBeat + "\t,\t");
     beatText.println(bpm + "\t,\t" + beatPeriodMillis[0] + "\t,\t" + sp02);
     writeBeat = false;
   }
 
-  if (writeTemp && recording_A || writePPG && recording_B)
+  if (writeTemp && recording_A || writeTemp && recording_B)
   {
     tempText.print(minute() + "," + second() + "\t,\t" + millisTemp + "\t,\t");
     tempText.println(objTemp + "\t,\t" + dieTemp + "\t,\t" + sensorVolt);
